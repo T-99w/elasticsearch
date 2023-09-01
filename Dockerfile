@@ -7,7 +7,7 @@
 # Pull base image.
 FROM dockerfile/java:oracle-java8
 
-ENV ES_PKG_NAME elasticsearch-1.5.0
+ENV ES_PKG_NAME lasticsearch-8.9.1-linux-x86_64
 
 # Install Elasticsearch.
 RUN \
