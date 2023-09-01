@@ -12,10 +12,10 @@ ENV ES_PKG_NAME elasticsearch-8.9.1-linux-x86_64
 # Install Elasticsearch.
 RUN \
   cd / && \
-  wget https://download.elasticsearch.org/elasticsearch/elasticsearch/$ES_PKG_NAME.tar.gz && \
-  tar xvzf $ES_PKG_NAME.tar.gz && \
-  rm -f $ES_PKG_NAME.tar.gz && \
-  mv /$ES_PKG_NAME /elasticsearch
+  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.9.1-linux-x86_64.tar.gz && \
+  tar xvzf elasticsearch-8.9.1-linux-x86_64.tar.gz && \
+  rm -f elasticsearch-8.9.1-linux-x86_64.tar.gz && \
+  mv /elasticsearch-8.9.1-linux-x86_64.tar.gz /elasticsearch
 
 # Define mountable directories.
 VOLUME ["/data"]
